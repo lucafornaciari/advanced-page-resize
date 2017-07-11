@@ -31,12 +31,12 @@ var advancedPageResize = function () {
         this.lastHeight = window.innerHeight;
 
         var callback = this._getCallback();
-        resize(callback);
+        this._resize(callback);
     }
 
     _createClass(advancedPageResize, [{
-        key: 'resize',
-        value: function resize(callback) {
+        key: '_resize',
+        value: function _resize(callback) {
             window.addEventListener('resize', callback);
         }
     }, {
@@ -77,7 +77,7 @@ var advancedPageResize = function () {
         key: '_setDimensions',
         value: function _setDimensions() {
             this.lastWidth = window.innerWidth;
-            this.lastHeight = window.height;
+            this.lastHeight = window.innerHeight;
         }
     }]);
 
