@@ -1,0 +1,28 @@
+{
+  "name": "advancedpageresize",
+  "version": "0.0.1",
+  "description": "advancedOnResize provide a simple solution to check window-x-resize, window-y-resize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel source --presets babel-preset-es2015 --out-dir distribution",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucafornaciari/advancedPageResize.git"
+  },
+  "author": "“Luca <“l.fornaciari94@gmail.com”> (“http://www.lfornaciari.it”)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucafornaciari/advancedPageResize/issues"
+  },
+  "homepage": "https://github.com/lucafornaciari/advancedPageResize#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {
+    "raf-throttle": "^2.0.2"
+  }
+}
